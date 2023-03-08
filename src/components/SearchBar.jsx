@@ -10,8 +10,8 @@ function SearchBar(props) {
    return (
      <div className='searchBar'>
        <form onSubmit={handleSubmit}>
-         <input id="input" type="text" placeholder="search character..." name="query" />
-         <button id="button" type="submit">Add</button>
+         <input className="input" type="text" placeholder="search character..." name="query" />
+         <button className="button" type="submit">Add</button>
        </form>
      </div>
    );
