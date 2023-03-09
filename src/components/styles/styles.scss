@@ -17,7 +17,7 @@ code {
       monospace;
   }
 
-/**********NAV**********/
+/***************NAV***************/
 .nav{
 
     .nav-image {
@@ -31,6 +31,12 @@ code {
         height: 150px;
     }
     }
+    @media screen and (max-width: 800px){
+        .nav-image {
+            width: 450px;
+            height: 200px;
+        }
+        }
 }
 
 /**********SEARCHBAR**********/
@@ -83,9 +89,7 @@ code {
             width: 150px;
             border-radius: 5px;
             height: 20px;
-            left: 100px;
-           
-            
+            left: 100px;       
     }
         .searchBar {
             position: relative;
@@ -100,7 +104,6 @@ code {
             height: 21px;
             left: 100px;
     }
-     
         .searchBar .input:hover{
             background: rgb(9, 67, 13);
             color: white;
@@ -116,7 +119,7 @@ code {
 
 
 
-/*****CARDS*****/
+/***************CARDS***************/
 .cards{
   display: flex;
   flex-direction: row;
@@ -131,15 +134,9 @@ code {
 }
 }
 
-/*****CARD*****/
+/***************CARD***************/
     .card{
         color: white;
-    
-    
-    // .card-body-btn{
-    //    //display: flex;
-       
-    // }
 
     .card-body{
         background: black;
