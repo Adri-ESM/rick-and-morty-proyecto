@@ -1,20 +1,13 @@
 import './App.css'
-import Card from './components/Card.jsx'
 import Cards from './components/Cards.jsx'
-import SearchBar from './components/SearchBar.jsx'
 import characters from './data.js'
-import ImageHeader from './images/Rick-and-Morty.png'
+import Nav from './components/Nav'
 
 function App () {
   return (
     <div className='App' style={{ padding: '25px' }}>
       <div>
-      <img src={ImageHeader} alt='imagen header' className="card-image-header"></img>
-      </div>
-      <div>
-        <SearchBar
-          onSearch={(characterID) => window.alert(characterID)}
-        />
+        <Nav />
       </div>
       <div>
         <Cards

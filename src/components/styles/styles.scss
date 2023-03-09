@@ -1,3 +1,6 @@
+//variables
+$background-color-nav: #2c7f8a;
+
 body {
     background-image: url(https://p4.wallpaperbetter.com/wallpaper/195/253/149/tv-show-rick-and-morty-morty-smith-rick-sanchez-wallpaper-preview.jpg);
     //background-repeat: no-repeat;
@@ -9,64 +12,109 @@ body {
         //background-size: cover;
     }
 }
-/*****HEADER*****/
-.card-image-header{
-    width: 50%;
-    height: 250px;
-    max-width: 850px;
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
 
-    
+/**********NAV**********/
+.nav{
+
+    .nav-image {
+        width: 600px;
+        height: 250px;
+}
 
     @media screen and (max-width: 500px){
-        width: 100%;
+    .nav-image {
+        width: 300px;
+        height: 150px;
+    }
     }
 }
 
-.searchBar .button, .input {
-    margin-bottom: 2rem;
-    width: 85px;
-    height: 40px;
-    padding: 0 10px;
-    font-size: 18px;
-    color: black;
-    outline: none;
-    border: 1px solid silver;
-    border-radius: 30px;
-    max-width: 850px;
-    
-}
-.searchBar .button:hover{
-    background: rgb(9, 67, 13);
-    color: white;
+/**********SEARCHBAR**********/
+    .searchBar {
+        background-color: $background-color-nav;
+        border: 2px solid #2a9d8f;
+        border-radius: 10px;
+        align-items: end;
+        height: 60px;
+
+        .button, .input{
+            position: relative;
+            right: -350px;
+            margin-top: 10px;
+        }
     }
 
-.searchBar .input:hover{
-    background: rgb(9, 67, 13);
-}
-
-.input::placeholder{
-    font-size: 18px;
-}
-
-.input {
-    width: 400px;
-    
-}
-@media screen and (max-width: 500px){
-    .input {
-        width: 200px;
+    .searchBar .button, .input {
+        margin-bottom: 2rem;
+        width: 65px;
+        height: 30px;
+        padding: 0 10px;
+        font-size: 18px;
         color: black;
-    }
-    .searchBar .input:hover{
-        background: rgb(9, 67, 13);
-    }
-    .input::placeholder{
-        font-size: 14px;
-    }
+        outline: none;
+        border: 1px solid silver;
+        border-radius: 10px;
+        max-width: 850px;
+}
+    
     .searchBar .button:hover{
         background: rgb(9, 67, 13);
-        }
+        color: white;
 }
+
+    .searchBar .input:hover{
+        background: rgb(9, 67, 13);
+}
+
+    .input::placeholder{
+        font-size: 18px;
+}
+
+    .input {
+        width: 400px;
+    
+}
+    @media screen and (max-width: 500px){
+        .input {
+            width: 150px;
+            border-radius: 5px;
+            height: 20px;
+            left: 100px;
+           
+            
+    }
+        .searchBar {
+            position: relative;
+            border-radius: 10px;
+            height: 45px;
+        }
+        .searchBar .button{
+            width: 50px;
+            height: 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            height: 21px;
+            left: 100px;
+    }
+     
+        .searchBar .input:hover{
+            background: rgb(9, 67, 13);
+            color: white;
+    }
+        .input::placeholder{
+            font-size: 16px;
+            
+    }
+        .searchBar .button:hover{
+            background: rgb(9, 67, 13);
+        }
+    }
+
+
 
 /*****CARDS*****/
 .cards{
@@ -84,14 +132,14 @@ body {
 }
 
 /*****CARD*****/
-.card{
-    color: white;
+    .card{
+        color: white;
     
     
-    .card-body-btn{
-       //display: flex;
+    // .card-body-btn{
+    //    //display: flex;
        
-    }
+    // }
 
     .card-body{
         background: black;
