@@ -2,7 +2,7 @@ import Card from './Card';
 //import CardsContainer from './CardsContainer';
 
 
-const Cards = ({ characters}) => {
+const Cards = ({ characters, onClose}) => {
    return (
    //<CardsContainer>
       <div className='cards'> {
@@ -13,6 +13,8 @@ const Cards = ({ characters}) => {
             name = {character.name}
             species = {character.species}
             gender = {character.gender}
+            onCLose = {onClose}
+
             />
       ))
       }

@@ -24,6 +24,21 @@ code {
         width: 600px;
         height: 250px;
 }
+    a{
+        color: white;
+        display: inline-flex;
+        padding-left: 10%;
+        padding-right: 10%;
+        font-size: 1.5rem;
+    }
+    a:link {
+        text-decoration-line: none;
+        cursor: pointer;
+        
+    }
+    a:hover{
+        color: rgb(228, 105, 53)
+    }
 
     @media screen and (max-width: 500px){
     .nav-image {
@@ -37,6 +52,11 @@ code {
             height: 200px;
         }
         }
+    @media screen and (min-width: 501px){
+            .nav-image {
+                display: none;
+            }
+            }
 }
 
 /**********SEARCHBAR**********/
@@ -47,14 +67,14 @@ code {
         align-items: end;
         height: 60px;
 
-        .button, .input{
+        .searchButton, .input{
             position: relative;
-            right: -350px;
+            right: -420px;
             margin-top: 10px;
         }
     }
 
-    .searchBar .button, .input {
+    .searchBar .searchButton, .input {
         margin-bottom: 2rem;
         width: 65px;
         height: 30px;
@@ -67,53 +87,54 @@ code {
         max-width: 850px;
 }
     
-    .searchBar .button:hover{
+    .searchBar .searchButton:hover{
         background: rgb(9, 67, 13);
         color: white;
 }
 
     .searchBar .input:hover{
         background: rgb(9, 67, 13);
+        color: white;
 }
 
     .input::placeholder{
-        font-size: 18px;
+        font-size: 16px;
 }
 
     .input {
-        width: 400px;
+        width: 250px;
     
 }
     @media screen and (max-width: 500px){
         .input {
-            width: 150px;
+            width: 100px;
             border-radius: 5px;
             height: 20px;
-            left: 100px;       
+            left: 140px;       
     }
         .searchBar {
             position: relative;
             border-radius: 10px;
             height: 45px;
         }
-        .searchBar .button{
+        .searchBar .searchButton{
             width: 50px;
-            height: 20px;
             font-size: 16px;
             border-radius: 5px;
-            height: 21px;
-            left: 100px;
+            height: 19px;
+            left: 140px;
     }
         .searchBar .input:hover{
             background: rgb(9, 67, 13);
             color: white;
     }
         .input::placeholder{
-            font-size: 16px;
+            font-size: 12px;
             
     }
-        .searchBar .button:hover{
+        .searchBar .searchButton:hover{
             background: rgb(9, 67, 13);
+            color: white;
         }
     }
 
@@ -141,7 +162,7 @@ code {
     .card-body{
         background: black;
         width: 16rem;
-        height: 7rem;
+        height: 9rem;
         border-radius: 1rem;
         padding-top: 0.5px;
         line-height : 10px;
@@ -152,9 +173,16 @@ code {
 
         @media screen and (max-width: 500px){
             width: 13rem;
-            height: 6rem;
+            height: 7rem;
             font-size: .8rem;
         }
+    }
+    .card-number{
+        color:  rgb(211, 213, 69);
+    }
+    .card-title{
+        color: rgb(211, 213, 69);
+        line-height: 1rem;
     }
 
     .card-image{
@@ -162,22 +190,31 @@ code {
         margin-top: 20px;
         width: 15rem;
     }
-    .card-title{
-        padding-top: 10px;
+    a{
+        color: rgb(228, 105, 53);
+        
     }
+    a:link {
+        line-height: 2.5rem;
+        text-decoration-line: none;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+    
+
     .card-close-btn{
         background-color: black;
         border: 0;
         color: red; 
         position: relative;
-        top: -125px;
+        top: -140px;
         right: -110px;
 
         @media screen and (max-width: 500px){
             font-size: .8rem;
             position: relative;
-            top: -110px;
-            right: -90px;
+            top: -130px;
+            right: -85px;
         }
     }
 
@@ -187,3 +224,8 @@ code {
         }
     }
 }
+
+/**********DETAIL**********/
+.detail{
+    color: white;
+}  

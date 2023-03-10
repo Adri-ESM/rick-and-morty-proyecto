@@ -10,14 +10,14 @@ function SearchBar({ onSearch }) {
 
   return (
     <div className='searchBar'>
-        <form 
+        <input
         type="search"
         onChange={handleChange} 
         className="input"
+        placeholder='826 Characters' 
         />
 
-  <button className='searchButton' onClick={(event) => {
-          event.preventDefault();
+  <button className='searchButton' onClick={() => {
           onSearch(id);
         }}>Add</button>
         
