@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
-
 function SearchBar({ onSearch }) {
   const [id, setId] = useState("")
+ // const [character, setCharacter] = useState("");/*lo utlimo agregado */
 
   const handleChange = (event) => {
     setId(event.target.value);
@@ -15,20 +15,20 @@ function SearchBar({ onSearch }) {
         onChange={handleChange} 
         className="input"
         />
-        <button className='searchButton' onClick={() => onSearch(id)}>Add</button>
+
+  <button className='searchButton' onClick={(event) => {
+          event.preventDefault();
+          onSearch(id);
+        }}>Add</button>
+        
+        
     </div>
   );
 }
-export default SearchBar;
 
-  /*
-  // const handleSubmit = (event) => {
-  //   event.preventDefault();
-  //   const query = event.target.elements.query.value;
-  //   props.onSearch(query);
-  // };
-*/
-
+//BUTTON ORIGINAL
+//<button className='searchButton' onClick={() => onSearch(id)}>
+//Add</button>
 
 
 // function SearchBar({ onSearch }) {
@@ -47,5 +47,5 @@ export default SearchBar;
 //    );
 //  }
  
- 
+ export default SearchBar;
 
