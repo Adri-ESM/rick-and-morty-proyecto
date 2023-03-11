@@ -20,8 +20,8 @@ function App () {
   function login(userData){
     if(userData.username === username && userData.password === password){
       setAccess(true);
-      alert('hola')
-      navigate('/about');
+      //alert('hola')
+      navigate('/home');
     }
   }
 

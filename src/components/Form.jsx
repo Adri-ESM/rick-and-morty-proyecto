@@ -13,29 +13,33 @@ export const validate = (form) => {
 
     if (!form.password.trim()){
         errors.password = "Password is required";
-    }
+    }else if (!/\d/.test(form.password)) {
+        errors.password = "Password must contain at least one number.";
+      } else if (form.password.length < 6 || form.password.length > 10) {
+        errors.password = "Password must be between 6 and 10 characters.";
+      }
     return errors;
 };
 
 
 export const Form = ({ login }) => {
-    const [userData, setUserData] = useState({ username: '', password: '' });
+    const [form, setForm] = useState({ username: '', password: '' });
     const [errors, setErrors] = useState({ username: null, password: null});
     //const [errors, setErrors] = React.useState({});
 
     const handleInputChange = (event) => {
         const {name, value } = event.target;
-        setUserData({ ...userData, [name]: value });
-        //setform((prevState) => ({ ...prevState, [name]: value }));
+        setForm({ ...form, [name]: value });
+        //setForm((prevState) => ({ ...prevState, [name]: value }));
     };
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        const validationErrors = validate(userData);
+        const validationErrors = validate(form);
         setErrors(validationErrors);
        
         if (Object.keys(validationErrors).length === 0) {
-            login(userData);
+            login(form);
           }
         // const newErrors = validate(form);
         // setErrors(newErrors);
@@ -53,7 +57,7 @@ export const Form = ({ login }) => {
                         id="username" 
                         name="username" 
                         placeholder="Email"
-                        value={userData.username}
+                        value={form.username}
                         onChange={handleInputChange}
                     />
                     {/*{errors.username && <div className='errors'>{errors.username}</div>}*/}
@@ -66,7 +70,7 @@ export const Form = ({ login }) => {
                         id="password" 
                         name="password" 
                         placeholder="Enter your password"
-                        value={userData.password}
+                        value={form.password}
                         onChange={handleInputChange}
                     />
                     {/*{errors.password && <div className="error">{errors.password}</div>}*/}
