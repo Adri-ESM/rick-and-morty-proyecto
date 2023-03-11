@@ -1,26 +1,24 @@
 import React, { useState } from "react";
 //import validate from "./validation";
 
-export const validate = (userData) => {
+export const validate = (form) => {
     const errors = {};
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    if (!userData.username.trim()) {
+    if (!form.username.trim()) {
         errors.username = "Username is required";
-    } else if (!emailRegex.test(userData.username)){
+    } else if (!emailRegex.test(form.username)){
         errors.username = "Username must be a valid email";
-    } else if (userData.username.length > 35){
-        errors.username = "Username must not exceed 35 characters";
-    }
+    } 
 
-    if (!userData.password.trim()){
+    if (!form.password.trim()){
         errors.password = "Password is required";
     }
     return errors;
 };
 
 
-export const Form = () => {
+export const Form = ({ login }) => {
     const [userData, setUserData] = useState({ username: '', password: '' });
     const [errors, setErrors] = useState({ username: null, password: null});
     //const [errors, setErrors] = React.useState({});
@@ -28,17 +26,21 @@ export const Form = () => {
     const handleInputChange = (event) => {
         const {name, value } = event.target;
         setUserData({ ...userData, [name]: value });
-        //setUserData((prevState) => ({ ...prevState, [name]: value }));
+        //setform((prevState) => ({ ...prevState, [name]: value }));
     };
 
     const handleSubmit = (event) => {
         event.preventDefault();
         const validationErrors = validate(userData);
         setErrors(validationErrors);
-        // const newErrors = validate(userData);
+       
+        if (Object.keys(validationErrors).length === 0) {
+            login(userData);
+          }
+        // const newErrors = validate(form);
         // setErrors(newErrors);
         // if(Object.keys(newErrors).length === 0){
-        //     console.log(userData);
+        //     console.log(form);
         // }
     };
     
@@ -50,6 +52,7 @@ export const Form = () => {
                         type="text" 
                         id="username" 
                         name="username" 
+                        placeholder="Email"
                         value={userData.username}
                         onChange={handleInputChange}
                     />
@@ -62,14 +65,25 @@ export const Form = () => {
                         type="password" 
                         id="password" 
                         name="password" 
+                        placeholder="Enter your password"
                         value={userData.password}
                         onChange={handleInputChange}
                     />
                     {/*{errors.password && <div className="error">{errors.password}</div>}*/}
                     {errors.password && <p className="error-message">{errors.password}</p>}
                 </div>
-                <button type="submit">Submit</button>
+                <button type="submit">Sign in</button>
             </form>
         );
 }
 
+
+
+// if (!form.username.trim()) {
+//     errors.username = "Username is required";
+// } else if (!emailRegex.test(form.username)){
+//     errors.username = "Username must be a valid email";
+// } 
+//else if (form.username.length > 35){
+   // errors.username = "Username must not exceed 35 characters";
+//}

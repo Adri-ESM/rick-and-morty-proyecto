@@ -17,7 +17,7 @@ const Detail = () => {
 //ojo de axios, axios me da un arespone y hacemos setCharacter de response.data
 
 
-    },[]);
+    },);
 
     return (
         <div className="detail">
@@ -28,7 +28,7 @@ const Detail = () => {
             <h3>{character.species}</h3> 
             <h3>{character.gender}</h3> 
             <h3>{character.origin?.name}</h3> 
-            <img src={character.image} alt="image" />  
+            <img src={character.image} alt="img" />  
           </>
         ) : (
             <h3>Loading...</h3>
@@ -39,5 +39,3 @@ const Detail = () => {
 
 export default Detail;
 
-{/*axios: Hace algo muy similar a fetch el resultado es el mismo
-//pregunta ? positiva : negativa TERNARIO*/}

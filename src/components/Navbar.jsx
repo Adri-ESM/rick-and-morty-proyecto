@@ -6,7 +6,7 @@ import ImageNav from './styles/images/Rick-and-Morty.png'
 const Nav = (props) => {
     const location = useLocation();
 
-  if (location.pathname === '/') {
+  if (location.pathname !== '/login') {
     return null;
   }
    

@@ -1,15 +1,33 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect } from 'react'
 import './App.css'
 import Cards from './components/Cards.jsx'
-import Nav from './components/Nav'
-import { Route, Routes } from 'react-router-dom'
+import Navbar from './components/Navbar'
+import { Routes, Route, useNavigate } from 'react-router-dom'
 import About from './components/About'
 import Detail from './components/Detail'
-import { Form } from 'react-router-dom'
+import { Form } from './components/Form.jsx'
 
 
 function App () {
+  const navigate = useNavigate();
   const [characters, setCharacters] = useState([]);
+  const [access, setAccess] = useState(false);
+  const username = 'anggivmorales@gmail.com';
+  const password = '123456';
+
+  
+
+  function login(userData){
+    if(userData.username === username && userData.password === password){
+      setAccess(true);
+      alert('hola')
+      navigate('/about');
+    }
+  }
+
+  useEffect(() => {
+    !access && navigate('/');
+ }, [access, navigate]);
 
   const onSearch = (id) => {
     const URL_BASE = "https://be-a-rym.up.railway.app/api";
@@ -31,16 +49,13 @@ function App () {
 
   return (
     <div className="App" style={{ padding: "25px" }}>
-      <Nav onSearch={onSearch} />
-      <Routes>
-        <Route exact path='/' element={Form} />
-        <Route 
-        path='/home' 
-        element={< Cards onClose={onClose} characters={characters}/>}
-        />
-        <Route path='/about' element={<About />} />
-        <Route path='/detail/:detailId' element={<Detail />}/>
-      </Routes>
+        <Navbar onSearch={onSearch} />
+        <Routes>
+          <Route exact path='/' element={<Form login={login} />} />
+          <Route path='/home' element={< Cards onClose={onClose} characters={characters}/>}/>
+          <Route path='/about' element={<About />} />
+          <Route path='/detail/:detailId' element={<Detail />}/>
+        </Routes>
     </div>
   );
 }
