@@ -19,7 +19,7 @@
                   <h3 className="card-species">Specie: {species}</h3>
                   <h3 className="card-gender">Gender: {gender}</h3>
                </div> */}
-            {/*<button onClick={() => onClose={id}} className="card-close-btn">X</button>*/}
+            <button onClick={() => onClose(id)} className="card-close-btn">X</button>
             </div>
          </div>
          </div>

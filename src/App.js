@@ -47,9 +47,14 @@ function App () {
     setCharacters(characters.filter((char) => char.id !== id))
   };
 
+  function logout(){
+    setAccess(false);
+    navigate("/");
+  }
+
   return (
     <div className="App" style={{ padding: "25px" }}>
-        <Navbar onSearch={onSearch} />
+        <Navbar onSearch={onSearch} logout={logout}/>
         <Routes>
           <Route exact path='/' element={<Form login={login} />} />
           <Route path='/home' element={< Cards onClose={onClose} characters={characters}/>}/>

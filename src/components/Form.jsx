@@ -37,15 +37,12 @@ export const Form = ({ login }) => {
         event.preventDefault();
         const validationErrors = validate(form);
         setErrors(validationErrors);
+        login(form);
        
-        if (Object.keys(validationErrors).length === 0) {
-            login(form);
-          }
-        // const newErrors = validate(form);
-        // setErrors(newErrors);
-        // if(Object.keys(newErrors).length === 0){
-        //     console.log(form);
-        // }
+        // if (Object.keys(validationErrors).length === 0) {
+        //     login(form);
+        //   }
+       
     };
     
     return (
