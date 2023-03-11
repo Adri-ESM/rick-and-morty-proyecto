@@ -5,7 +5,7 @@ import Nav from './components/Nav'
 import { Route, Routes } from 'react-router-dom'
 import About from './components/About'
 import Detail from './components/Detail'
-
+import { Form } from 'react-router-dom'
 
 
 function App () {
@@ -21,7 +21,7 @@ function App () {
       if (data.name && !characters.find((char) => char.id === data.id)){
       setCharacters((oldChars) => [...oldChars, data]);
     } else{
-      return alert("Ya agregaste esta Card")
+      return alert("You already added this card")
     }
   });
   };
@@ -33,6 +33,7 @@ function App () {
     <div className="App" style={{ padding: "25px" }}>
       <Nav onSearch={onSearch} />
       <Routes>
+        <Route exact path='/' element={Form} />
         <Route 
         path='/home' 
         element={< Cards onClose={onClose} characters={characters}/>}

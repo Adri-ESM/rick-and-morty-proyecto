@@ -25,6 +25,7 @@ function SearchBar({ onSearch }) {
     </div>
   );
 }
+export default SearchBar;
 
 //BUTTON ORIGINAL
 //<button className='searchButton' onClick={() => onSearch(id)}>
@@ -47,5 +48,5 @@ function SearchBar({ onSearch }) {
 //    );
 //  }
  
- export default SearchBar;
+
 

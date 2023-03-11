@@ -1,20 +1,27 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import SearchBar from "./SearchBar";
 import ImageNav from './styles/images/Rick-and-Morty.png'
 
 const Nav = (props) => {
+    const location = useLocation();
+
+  if (location.pathname === '/') {
+    return null;
+  }
    
     return <div className="nav">
-                <SearchBar
-                    onSearch = {props.onSearch}
-                />
-                <Link to="/About">
-                    <h3>About</h3>
-                </Link>
-                <Link to="/Home">
-                    <h3>Home</h3>
-                </Link>
+                <div>
+                    <SearchBar
+                        onSearch = {props.onSearch}
+                    />
+                    <Link to="/About">
+                        <h3>About</h3>
+                    </Link>
+                    <Link to="/Home">
+                        <h3>Home</h3>
+                    </Link>
+                </div>
                 <div>
                     <img src={ImageNav} alt='imagen nav' className="nav-image"></img>
                 </div> 
