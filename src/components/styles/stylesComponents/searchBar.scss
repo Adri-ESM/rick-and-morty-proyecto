@@ -50,7 +50,7 @@
         width: 100px;
         border-radius: 5px;
         height: 20px;
-        left: 140px;       
+        left: 120px;       
 }
     .searchBar {
         position: relative;
@@ -62,7 +62,7 @@
         font-size: 16px;
         border-radius: 5px;
         height: 19px;
-        left: 140px;
+        left: 120px;
 }
     .searchBar .input:hover{
         background: rgb(9, 67, 13);
@@ -93,30 +93,59 @@
 
 @media screen and(min-width: 801px) {
     .input {
-        left: 180px;       
+        left: 115px;       
 }
     .searchBar .searchButton{
-        left: 180px;
+        left: 115px;
 }
   
 }
 
-@media (min-width: 850px) and (max-width: 1200px){
+@media screen and (min-width: 850px) {
     .input {
-        left: 270px;       
+        left: 120px;       
 }
     .searchBar .searchButton{
-        left: 270px;
+        left: 120px;
 }
   
 }
 
-@media screen and(min-width: 1201px) {
+@media screen and (min-width: 900px) {
     .input {
-        left: 400px;       
+        left: 130px;       
 }
     .searchBar .searchButton{
-        left: 400px;
+        left: 130px;
+}
+  
+}
+
+@media screen and (min-width: 1000px) {
+    .input {
+        left: 150px;       
+}
+    .searchBar .searchButton{
+        left: 150px;
+}
+  
+}
+
+@media screen and (min-width: 1100px) {
+    .input {
+        left: 170px;       
+}
+    .searchBar .searchButton{
+        left: 170px;
+}
+  
+}
+@media screen and (min-width: 1200px) {
+    .input {
+        left: 190px;       
+}
+    .searchBar .searchButton{
+        left: 190px;
 }
   
 }

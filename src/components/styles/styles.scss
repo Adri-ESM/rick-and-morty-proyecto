@@ -11,12 +11,15 @@ $background-color-nav: #2c7f8a;
 
 //Variables buttons
 
+
+
 body {
     background-image: url(https://images3.alphacoders.com/812/thumbbig-812062.webp);
     //background-repeat: no-repeat;
     background-size: cover;
     //background-size: contain;
-
+    background-repeat: no-repeat;
+ 
     @media screen and (max-width: 500px){
         background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBwk5a4Mph395GBU4QEI182xjPjjG20xBL8-IcuwpTt8Wo2hsSKtzB2Kc_k14ppiNUdHY&usqp=CAU);
         //background-size: cover;
