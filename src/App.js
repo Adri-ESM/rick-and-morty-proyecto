@@ -12,6 +12,7 @@ function App () {
   const navigate = useNavigate();
   const [characters, setCharacters] = useState([]);
   const [access, setAccess] = useState(false);
+  const [showNav, setShowNav] = useState(true);
   const username = 'anggivmorales@gmail.com';
   const password = '123456';
 
@@ -23,6 +24,11 @@ function App () {
       //alert('hola')
       navigate('/home');
     }
+  }
+
+  function logout(){
+    setAccess(false);
+    navigate("/");
   }
 
   useEffect(() => {
@@ -47,19 +53,16 @@ function App () {
     setCharacters(characters.filter((char) => char.id !== id))
   };
 
-  function logout(){
-    setAccess(false);
-    navigate("/");
-  }
+
 
   return (
     <div className="App" style={{ padding: "25px" }}>
-        <Navbar onSearch={onSearch} logout={logout}/>
+        {showNav && <Navbar onSearch={onSearch} logout={logout}/>}
         <Routes>
           <Route exact path='/' element={<Form login={login} />} />
           <Route path='/home' element={< Cards onClose={onClose} characters={characters}/>}/>
           <Route path='/about' element={<About />} />
-          <Route path='/detail/:detailId' element={<Detail />}/>
+          <Route path='/detail/:detailId' element={<Detail setShowNav={setShowNav}/>}/>
         </Routes>
     </div>
   );

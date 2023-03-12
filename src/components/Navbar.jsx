@@ -24,8 +24,8 @@ const Nav = (props) => {
                     <Link to="/Home">
                         <h3>Home</h3>
                     </Link>
-                    </div>
-                        <button onClick={props.logout}>Logout</button>
+                    <button className='logout-button'onClick={props.logout}>Sign out</button>
+                    </div> 
                     <div>
                     <img src={ImageNav} alt='imagen nav' className="nav-image"></img>
                 </div> 

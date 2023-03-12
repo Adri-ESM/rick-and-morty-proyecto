@@ -1,0 +1,70 @@
+.card{
+    color: white;
+    
+.card-body{
+    position: relative;
+    background: black;
+    width: 16rem;
+    height: 9rem;
+    border-radius: 1rem;
+    padding-top: 0.5px;
+    line-height : 10px;
+    margin: auto;
+    top: -20px;
+    
+    @media screen and (max-width: 500px){
+        width: 12rem;
+        height: 7rem;
+        font-size: .8rem;
+    }
+}
+
+.card-number{
+    color:  rgb(211, 213, 69);
+    margin-top: .5rem;
+}
+
+.card-title{
+    color: rgb(211, 213, 69);
+    line-height: 1.2rem;
+ 
+}
+
+.card-image{
+    border-radius: 50%;
+    margin-top: 20px;
+    width: 15rem;
+}
+a{
+    color: rgb(228, 105, 53);
+    
+}
+a:link {
+    line-height: 1.5rem;
+    text-decoration-line: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.card-close-btn button{
+    position:static;
+    background-color: black;
+    border: 0;
+    color: red; 
+    top: -140px;
+    right: -110px;
+
+    @media screen and (max-width: 500px){
+        font-size: .8rem;
+        position: relative;
+        top: -130px;
+        right: -85px;
+    }
+}
+
+    @media screen and (max-width: 500px){
+    .card-image {
+        width: 12rem;
+    }
+}
+}

@@ -1,0 +1,119 @@
+.searchBar {
+    // /background-color: $background-color-nav;
+    border: 2px solid #2a9d8f;
+    border-radius: 10px;
+    align-items: end;
+    height: 60px;
+    
+
+    .searchButton, .input{
+        position: relative;
+        right: -420px;
+        margin-top: 10px;
+    }
+}
+
+.searchBar .searchButton, .input {
+    margin-bottom: 2rem;
+    width: 65px;
+    height: 30px;
+    padding: 0 10px;
+    font-size: 18px;
+    color: black;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 10px;
+    max-width: 850px;
+    
+}
+
+.searchBar .searchButton:hover{
+    background: rgb(9, 67, 13);
+    color: white;
+}
+
+.searchBar .input:hover{
+    background: rgb(9, 67, 13);
+    color: white;
+}
+
+.input::placeholder{
+    font-size: 16px;
+}
+
+.input {
+    width: 250px;
+
+}
+@media screen and (max-width: 500px){
+    .input {
+        width: 100px;
+        border-radius: 5px;
+        height: 20px;
+        left: 140px;       
+}
+    .searchBar {
+        position: relative;
+        border-radius: 10px;
+        height: 45px;
+    }
+    .searchBar .searchButton{
+        width: 50px;
+        font-size: 16px;
+        border-radius: 5px;
+        height: 19px;
+        left: 140px;
+}
+    .searchBar .input:hover{
+        background: rgb(9, 67, 13);
+        color: white;
+}
+    .input::placeholder{
+        font-size: 12px;
+        
+}
+    .searchBar .searchButton:hover{
+        background: rgb(9, 67, 13);
+        color: white;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 800px){
+    .input {
+        left: 100px;       
+}
+    .searchBar .searchButton{
+    left: 100px;
+}
+  
+}
+
+@media screen and(min-width: 801px) {
+    .input {
+        left: 180px;       
+}
+    .searchBar .searchButton{
+        left: 180px;
+}
+  
+}
+
+@media (min-width: 850px) and (max-width: 1200px){
+    .input {
+        left: 270px;       
+}
+    .searchBar .searchButton{
+        left: 270px;
+}
+  
+}
+
+@media screen and(min-width: 1201px) {
+    .input {
+        left: 400px;       
+}
+    .searchBar .searchButton{
+        left: 400px;
+}
+  
+}
