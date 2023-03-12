@@ -19,18 +19,24 @@
         color: rgb(228, 105, 53)
     }
     .logout-button{
+        background: #495867;
+        min-width: 8rem;
+        max-width: 15rem;
         height: 2rem;
-        padding: auto;
+        color: #fff;
         font-size: 16px;
-        
+        padding: auto;
+        border-radius: 2rem;
+        //line-height: 23px;
+        border: none;
     }
 
     
 
     @media screen and (max-width: 500px){
     .nav-image {
-        width: 450px;
-        height: 200px;
+        width: 320px;
+        height: 150px;
     }
     }
     // @media screen and (max-width: 800px){
