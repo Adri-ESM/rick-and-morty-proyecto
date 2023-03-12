@@ -80,10 +80,13 @@
 
 @media (min-width: 501px) and (max-width: 800px){
     .input {
-        left: 100px;       
+        width: 8rem;
+        left: 120px;       
 }
     .searchBar .searchButton{
-    left: 100px;
+        font-size: 1rem;
+        width: 3rem;
+        left: 120px;
 }
   
 }
