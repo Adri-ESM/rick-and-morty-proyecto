@@ -73,7 +73,7 @@ export const Form = ({ login }) => {
                     {/*{errors.password && <div className="error">{errors.password}</div>}*/}
                     {errors.password && <p className="error-message">{errors.password}</p>}
                 </div>
-                <button type="submit">Sign in</button>
+                <button className="form-btn" type="submit">Sign in</button>
             </form>
         );
 }
