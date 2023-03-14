@@ -13,12 +13,12 @@ function App () {
   const [characters, setCharacters] = useState([]);
   const [access, setAccess] = useState(false);
   const [showNav, setShowNav] = useState(true);
-  const username = 'anggivmorales@gmail.com';
-  const password = 'As123456';
-
   
 
   function login(userData){
+    const username = userData.username;
+    const password = userData.password;
+
     if(userData.username === username && userData.password === password){
       setAccess(true);
       //alert('hola')
