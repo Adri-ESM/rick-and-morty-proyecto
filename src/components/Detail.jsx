@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import axios from "axios";
-import { validate } from "./Form";
+//import { validate } from "./Form";
 
 const Detail = ({ setShowNav }) => {
     
@@ -50,9 +50,9 @@ const Detail = ({ setShowNav }) => {
             <img src={character.image} alt="img" />  
             </div>
             </div>
-            <div>
+            {/* <div>
             <Link className="detail-return" to="/home">Return</Link>
-            </div>
+            </div> */}
           </>
         ) : (
             <h3>Loading...</h3>

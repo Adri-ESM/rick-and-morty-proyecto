@@ -14,7 +14,7 @@ function App () {
   const [access, setAccess] = useState(false);
   const [showNav, setShowNav] = useState(true);
   const username = 'anggivmorales@gmail.com';
-  const password = '123456';
+  const password = 'As123456';
 
   
 

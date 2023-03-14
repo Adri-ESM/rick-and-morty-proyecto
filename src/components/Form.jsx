@@ -4,17 +4,20 @@ import React, { useState } from "react";
 export const validate = (form) => {
     const errors = {};
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const passwordRegex = /^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])(\S){6,10}$/;
 
     if (!form.username.trim()) {
         errors.username = "Username is required";
+    } else if (form.username.length > 35){
+        errors.username = "It cannot be longer than 35 characters";
     } else if (!emailRegex.test(form.username)){
         errors.username = "Username must be a valid email";
-    } 
+    }
 
     if (!form.password.trim()){
         errors.password = "Password is required";
-    }else if (!/\d/.test(form.password)) {
-        errors.password = "Password must contain at least one number.";
+    }else if (!passwordRegex.test(form.password)) {
+        errors.password = "The password must contain at least one number, one lower case and one upper case";
       } else if (form.password.length < 6 || form.password.length > 10) {
         errors.password = "Password must be between 6 and 10 characters.";
       }
