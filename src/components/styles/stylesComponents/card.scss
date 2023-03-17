@@ -1,9 +1,11 @@
 .card{
     color: white;
-    display: grid;
-    grid-template-rows: round($number: 1);
-    margin-top: 3rem;
- 
+    margin-top: 3rem; 
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    
+    
     .card-body{
         position: relative;
         background: black;
@@ -14,14 +16,14 @@
         line-height : 10px;
         margin: auto;
         top: -20px;
-     
-
         
         @media screen and (max-width: 500px){
             width: 12rem;
             height: 9rem;
             font-size: .8rem;
         }
+      
+       
     }
 
     .card-number{

@@ -1,11 +1,12 @@
-import React, {useState, useEffect } from 'react'
-import './App.css'
-import Cards from './components/Cards.jsx'
-import Navbar from './components/Navbar'
-import { Routes, Route, useNavigate } from 'react-router-dom'
-import About from './components/About'
-import Detail from './components/Detail'
-import { Form } from './components/Form.jsx'
+import React, {useState, useEffect } from 'react';
+import './App.css';
+import Cards from './components/Cards.jsx';
+import Navbar from './components/Navbar';
+import { Routes, Route, useNavigate } from 'react-router-dom';
+import About from './components/About';
+import Detail from './components/Detail';
+import { Form } from './components/Form';
+import Favorites from './components/Favorite/Favorites';
 
 
 function App () {
@@ -60,8 +61,9 @@ function App () {
         {showNav && <Navbar onSearch={onSearch} logout={logout}/>}
         <Routes>
           <Route exact path='/' element={<Form login={login} />} />
-          <Route path='/home' element={< Cards onClose={onClose} characters={characters}/>}/>
+          <Route path='/home' element={<Cards onClose={onClose} characters={characters}/>}/>
           <Route path='/about' element={<About />} />
+          <Route path='/favorites' element={<Favorites />} />
           <Route path='/detail/:detailId' element={<Detail setShowNav={setShowNav}/>}/>
         </Routes>
     </div>
