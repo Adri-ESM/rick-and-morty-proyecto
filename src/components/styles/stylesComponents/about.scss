@@ -1,4 +1,20 @@
 .container{
     background-image: url('https://img.freepik.com/vector-gratis/fondo-minimalista-dibujado-mano_23-2149001650.jpg?size=626&ext=jpg&ga=GA1.1.1089459513.1678641889&semt=ais');
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    display: inline-block;
+    opacity: 0.8;
     
+    h2{
+        padding: 20px;
+    }
+
+    .container_p1, .container_p2{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+
+   }
+
 }
