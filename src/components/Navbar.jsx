@@ -2,6 +2,7 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import SearchBar from "./SearchBar";
 import ImageNav from './styles/images/Rick-and-Morty.png'
+import { Footer } from "./Footer";
 
 const Nav = (props) => {
     
@@ -34,6 +35,7 @@ const Nav = (props) => {
                     <div>
                     <img src={ImageNav} alt='imagen nav' className="nav-image"></img>
                 </div> 
+                <Footer />
             </div>
            
 }
