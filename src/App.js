@@ -7,6 +7,7 @@ import About from './components/About';
 import Detail from './components/Detail';
 import { Form } from './components/Form';
 import Favorites from './components/Favorite/Favorites';
+import { Footer } from './components/Footer';
 
 
 function App () {
@@ -66,6 +67,9 @@ function App () {
           <Route path='/favorites' element={<Favorites />} />
           <Route path='/detail/:detailId' element={<Detail setShowNav={setShowNav}/>}/>
         </Routes>
+        <div>
+          <Footer />
+        </div>
     </div>
   );
 }
