@@ -1,3 +1,5 @@
+@import "../variables.scss";
+
 .nav{
     //position: fixed;
     .nav-image {
@@ -19,7 +21,7 @@
         color: rgb(228, 105, 53)
     }
     .logout-button{
-        background: #495867;
+        background: $background-color-buttons;
         min-width: 8rem;
         max-width: 15rem;
         height: 2rem;
@@ -35,7 +37,7 @@
 
     @media screen and (max-width: 500px){
     .nav-image {
-        width: 320px;
+        width: 300px;
         height: 150px;
     }
     .nav-links a{

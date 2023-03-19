@@ -1,3 +1,5 @@
+@import "../variables.scss";
+
 .searchBar {
     // /background-color: $background-color-nav;
     border: 2px solid #2a9d8f;
@@ -27,7 +29,7 @@
     
 }
 .searchBar .searchButton {
-background: #495867;
+background: $background-color-buttons;
 width: 70px;
 height: 2rem;
 color: #fff;
