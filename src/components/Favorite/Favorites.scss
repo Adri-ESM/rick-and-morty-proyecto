@@ -1,0 +1,26 @@
+@import '../styles/variables';
+
+.favorites-container{
+
+    .fav-img{
+        border-radius: 1rem;
+    }
+
+    .fav-list{
+        border-radius: 1rem;
+        background-color: $background-color-nav;
+    }
+    
+    h1{
+        color: $white-font;
+    }
+
+    // .fav-title 
+
+    @media screen and (max-width: 500px){
+        .fav-img{
+            width: 250px;
+        }
+    }
+}
+

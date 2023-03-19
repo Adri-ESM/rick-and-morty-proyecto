@@ -65,10 +65,6 @@
                </Link>
                </div>
             </div>
-               {/* <div className="card-subtitles">
-                  <h3 className="card-species">Specie: {species}</h3>
-                  <h3 className="card-gender">Gender: {gender}</h3>
-               </div> */}
                <div>
             <button onClick={() => onClose(props.id)} className="card-close-btn">X</button>
            
