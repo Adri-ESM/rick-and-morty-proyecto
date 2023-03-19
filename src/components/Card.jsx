@@ -63,12 +63,18 @@
                   <p className="add-fav-title">
                      Add to your Favorites
                      <br/>
-                     <span className="add-fav-heart">❤️</span>
+                     <span className="add-fav-heart-red">❤️</span>
                   </p>
                   
                   </button>
             ) : (
-               <button className="add-fav-button" onClick={handleFavorite}>🤍</button>
+               <button className="add-fav-button" onClick={handleFavorite}>
+                  <p className="added-fav-title">
+                     Added your Favorites
+                     <br/>
+                     <span className="add-fav-heart-white">🤍</span>
+                  </p>
+                  </button>
             )
           }
                </div>
