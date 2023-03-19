@@ -20,6 +20,7 @@
       }
    };
 
+   //FOR EACH
    // useEffect(() => {
    //    props.myFavorites.forEach((fav) => {
    //       if (fav.id === props.id) {

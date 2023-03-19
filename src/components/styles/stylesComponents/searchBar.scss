@@ -6,14 +6,14 @@
     height: 60px;
     
 
-    .searchButton, .input{
+    .searchButton, .search-input{
         position: relative;
         right: -420px;
         margin-top: 10px;
     }
 }
 
-.searchBar .input {
+.searchBar .search-input {
     margin-bottom: 2rem;
     width: 100px;
     height: 30px;
@@ -43,45 +43,48 @@ border: none;
     color: white;
 }
 
-.searchBar .input:hover{
+.searchBar .search-input:hover{
     background: rgb(9, 67, 13);
     color: white;
 }
 
-.input::placeholder{
+.search-input::placeholder{
     font-size: 16px;
 }
 
-.input {
+.search-input {
     width: 250px;
 
 }
 
 @media screen and (max-width: 500px){
-    .searchBar .input {
-        width: 65px;
+    .searchBar .search-input {
+        width: 140px;
         border-radius: 5px;
         height: 20px;
-        left: 60px;       
+        left: 20px;
+              
 }
     .searchBar {
         position: relative;
         border-radius: 10px;
         height: 45px;
+      
+      
     }
     .searchBar .searchButton{
         width: 65px;
         font-size: 16px;
         border-radius: 5px;
-        height: 19px;
-        left: 60px;
+        height: 20px;
+        left: 20px;
         text-align: center;
 }
-    .searchBar .input:hover{
+    .searchBar .search-input:hover{
         background: rgb(9, 67, 13);
         color: white;
 }
-    .input::placeholder{
+    .search-input::placeholder{
         font-size: 14px;
         
         
@@ -94,7 +97,7 @@ border: none;
 
 
 @media (min-width: 501px) and (max-width: 800px){
-    .input {
+    .search-input {
         width: 8rem;
         left: 120px;       
 }
@@ -108,7 +111,7 @@ border: none;
 }
 
 @media screen and(min-width: 801px) {
-    .input {
+    .search-input {
         left: 215px;       
 }
     .searchBar .searchButton{
@@ -118,7 +121,7 @@ border: none;
 }
 
 @media screen and (min-width: 850px) {
-    .input {
+    .search-input {
         left: 220px;       
 }
     .searchBar .searchButton{
@@ -128,7 +131,7 @@ border: none;
 }
 
 @media screen and (min-width: 900px) {
-    .input {
+    .search-input {
         left: 230px;       
 }
     .searchBar .searchButton{
@@ -138,7 +141,7 @@ border: none;
 }
 
 @media screen and (min-width: 1000px) {
-    .input {
+    .search-input {
         left: 250px;       
 }
     .searchBar .searchButton{
@@ -148,7 +151,7 @@ border: none;
 }
 
 @media screen and (min-width: 1100px) {
-    .input {
+    .search-input {
         left: 270px;       
 }
     .searchBar .searchButton{
@@ -157,7 +160,7 @@ border: none;
   
 }
 @media screen and (min-width: 1200px) {
-    .input {
+    .search-input {
         left: 290px;       
 }
     .searchBar .searchButton{

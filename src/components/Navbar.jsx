@@ -18,15 +18,17 @@ const Nav = (props) => {
                     <SearchBar
                         onSearch = {props.onSearch}
                     />
-                    <Link to="/About">
+                    <div className="nav-links">
+                    <Link className="nav-about" to="/About">
                         <h3>About</h3>
                     </Link>
-                    <Link to="/Home">
+                    <Link className="nav-home" to="/Home">
                         <h3>Home</h3>
                     </Link>
-                    <Link to="/Favorites">
+                    <Link className="nav-favorites" to="/Favorites">
                         <h3>Favorites</h3>
                     </Link>
+                    </div>
                     <button className='logout-button'onClick={props.logout}>Logout</button>
                     </div> 
                     <div>
