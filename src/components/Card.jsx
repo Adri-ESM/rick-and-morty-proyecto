@@ -81,7 +81,7 @@
                
             </div>
                <div>
-            <button onClick={() => onClose(props.id)} className="card-close-btn">X</button>
+            <button onClick={() => props.onClose(props.id)} className="card-close-btn">X</button>
             </div>
             </div>
             
