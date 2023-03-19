@@ -30,9 +30,14 @@
     @media screen and (max-width: 500px){
         .detail-list-img{
             display: inline-block;
-            
        }
+       .detail-list{
+        width: 270px;
+       }
+       .detail-img img{
+        width: 270px;
     }
+}
 
     @media (min-width: 501px) and (max-width: 800px){
         .detail{

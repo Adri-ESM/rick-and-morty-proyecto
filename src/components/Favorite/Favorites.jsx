@@ -12,9 +12,9 @@ const Favorites = ({ favorites }) => {
               <img className="fav-img" src={favorite.image} alt="img" /> 
           <h2>Name: {favorite.name}</h2>  
           <h3>Status: {favorite.status}</h3> 
-          <h3>Specie: {favorite.specie}</h3> 
+          <h3>Specie: {favorite.species}</h3> 
           <h3>Gender: {favorite.gender}</h3> 
-          <h3>Origin: {favorite.origin}</h3> 
+          <h3>Origin: {favorite.origin}</h3>  
           </div>
           <div className="detail-img">
           </div>

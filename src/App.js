@@ -65,7 +65,7 @@ function App () {
           <Route path='/home' element={<Cards onClose={onClose} characters={characters}/>}/>
           <Route path='/about' element={<About />} />
           <Route path='/favorites' element={<Favorites />} />
-          <Route path='/detail/:detailId' element={<Detail setShowNav={setShowNav}/>}/>
+          
         </Routes>
         <div>
           <Footer />
@@ -94,4 +94,4 @@ export default App;
     
   
   
-  
+  // <Route path='/detail/:detailId' element={<Detail setShowNav={setShowNav}/>}/>

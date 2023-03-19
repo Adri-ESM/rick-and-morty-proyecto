@@ -45,13 +45,6 @@
 
    return (
       <div className="card">
-          {
-            isFav ? (
-               <button onClick={handleFavorite}>❤️</button>
-            ) : (
-               <button onClick={handleFavorite}>🤍</button>
-            )
-         }
          <div className="card-header">
             <img src={props.image} alt={props.name} className="card-image"></img>
          </div>
@@ -61,13 +54,28 @@
                   <h2 className="card-title">{props.name}</h2>
             
                <Link to={`/detail/${props.id}`}>
-                  <p className="card-see-btn">Ver</p>
+                  <p className="card-see-btn"></p>
                </Link>
+
+               {
+            isFav ? (
+               <button className="add-fav-button" onClick={handleFavorite}>
+                  <p className="add-fav-title">
+                     Add to your Favorites
+                     <br/>
+                     <span className="add-fav-heart">❤️</span>
+                  </p>
+                  
+                  </button>
+            ) : (
+               <button className="add-fav-button" onClick={handleFavorite}>🤍</button>
+            )
+          }
                </div>
+               
             </div>
                <div>
             <button onClick={() => onClose(props.id)} className="card-close-btn">X</button>
-           
             </div>
             </div>
             

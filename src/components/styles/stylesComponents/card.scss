@@ -24,6 +24,20 @@
             height: 9rem;
             font-size: .8rem;
         }
+        .add-fav-button{
+            margin-bottom: 1px;
+            border-radius: 10px;
+        }
+    
+        .add-fav-button, .add-fav-heart{
+            background-color: $background-black;
+            border: none;
+        }
+        .add-fav-title{
+            background-color: $background-black;
+            color: $white-font;
+            border: none;
+        }
       
        
     }
