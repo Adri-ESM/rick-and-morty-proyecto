@@ -1,7 +1,8 @@
 @import '../variables';
 
 .container{
-    background-image: url('https://img.freepik.com/vector-gratis/fondo-minimalista-dibujado-mano_23-2149001650.jpg?size=626&ext=jpg&ga=GA1.1.1089459513.1678641889&semt=ais');
+    background-color: $background-about;
+    //background-image: url('https://img.freepik.com/vector-gratis/fondo-minimalista-dibujado-mano_23-2149001650.jpg?size=626&ext=jpg&ga=GA1.1.1089459513.1678641889&semt=ais');
     width: 500px;
     height: 500px;
     border-radius: 20px;
@@ -17,6 +18,11 @@
     font-style: italic;
     font-weight: bold;
 
+   }
+
+   @media screen and (max-width: 500px){
+        width: auto;
+        height: auto;
    }
 
 }
