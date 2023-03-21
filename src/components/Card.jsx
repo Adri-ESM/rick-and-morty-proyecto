@@ -6,7 +6,7 @@
 
  
 
- const Card = (props, onClose) => {
+ const Card = (props) => {
    const [isFav, setIsFav ] = useState(false);
 
  

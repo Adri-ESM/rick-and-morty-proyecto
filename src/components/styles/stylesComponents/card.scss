@@ -4,20 +4,20 @@
     color: white;
     margin-top: 3rem; 
     text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    
-    
+  
+   
+   
+   
     .card-body{
         position: relative;
         background: black;
-        width: 14rem;
         height: 9rem;
         border-radius: 1rem;
         padding-top: 0.5px;
         line-height : 10px;
         margin: auto;
         top: -20px;
+       
         
         @media screen and (max-width: 500px){
             width: 12rem;
@@ -47,10 +47,9 @@
             color: $white-font;
             border: none;
         }
-      
-       
+   
+    
     }
-
     .card-number{
         color:  rgb(211, 213, 69);
         margin-top: .5rem;

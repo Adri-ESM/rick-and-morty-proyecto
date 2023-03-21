@@ -51,9 +51,9 @@ export const Form = ({ login }) => {
     return (
             <form className="form-container" onSubmit={handleSubmit}>
                 <div className="form-field">
-                    <label htmlFor="username">Username:</label>
+                    <label htmlFor="username"></label>
                     <input 
-                        type="text" 
+                        type="text"  
                         id="username" 
                         name="username" 
                         placeholder="Email"
@@ -64,7 +64,7 @@ export const Form = ({ login }) => {
                     {errors.username && <p className="error-message">{errors.username}</p>}
                     </div>
                     <div className="form-field">
-                        <label htmlFor="password">Password:</label>
+                        <label htmlFor="password"></label>
                     <input 
                         type="password" 
                         id="password" 
@@ -83,11 +83,3 @@ export const Form = ({ login }) => {
 
 
 
-// if (!form.username.trim()) {
-//     errors.username = "Username is required";
-// } else if (!emailRegex.test(form.username)){
-//     errors.username = "Username must be a valid email";
-// } 
-//else if (form.username.length > 35){
-   // errors.username = "Username must not exceed 35 characters";
-//}
