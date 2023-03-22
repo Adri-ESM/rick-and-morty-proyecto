@@ -51,7 +51,7 @@ export const Form = ({ login }) => {
     return (
             <form className="form-container" onSubmit={handleSubmit}>
                 <div className="form-field">
-                    <label htmlFor="username"></label>
+                    <label htmlFor="username" ></label>
                     <input 
                         type="text"  
                         id="username" 
@@ -59,6 +59,7 @@ export const Form = ({ login }) => {
                         placeholder="Email"
                         value={form.username}
                         onChange={handleInputChange}
+                        
                     />
                     {/*{errors.username && <div className='errors'>{errors.username}</div>}*/}
                     {errors.username && <p className="error-message">{errors.username}</p>}

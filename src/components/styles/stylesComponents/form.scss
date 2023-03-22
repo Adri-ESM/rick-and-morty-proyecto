@@ -24,6 +24,10 @@
     border: 0;
     box-shadow: 3px 3px 3px 1.5px rgb(121, 116, 116);
   }
+  input[type=text], input[type=password] {
+    text-align: center;
+    font-size: $size-16px;
+  }
   input:hover{
     background-color: #985ca5;
     color: #fff;
@@ -32,8 +36,9 @@
     font-family: 'Inter', sans-serif;
     font-size: 1.2rem;
     font-weight: 600;
-    text-align: center;
+    text-align: center
   }
+ 
   .form-field {
     display: flex;
     flex-direction: column;
