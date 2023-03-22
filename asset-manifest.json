@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/rick-and-morty-proyecto/static/css/main.b6fbb980.css",
-    "main.js": "/rick-and-morty-proyecto/static/js/main.16be5026.js",
+    "main.css": "/rick-and-morty-proyecto/static/css/main.ec5416f5.css",
+    "main.js": "/rick-and-morty-proyecto/static/js/main.e968e042.js",
     "static/media/Rick-and-Morty.png": "/rick-and-morty-proyecto/static/media/Rick-and-Morty.0cff77d1cd22fec8d595.png",
+    "static/media/github.png": "/rick-and-morty-proyecto/static/media/github.8ec391778b5b4d933e73.png",
     "index.html": "/rick-and-morty-proyecto/index.html",
-    "main.b6fbb980.css.map": "/rick-and-morty-proyecto/static/css/main.b6fbb980.css.map",
-    "main.16be5026.js.map": "/rick-and-morty-proyecto/static/js/main.16be5026.js.map"
+    "main.ec5416f5.css.map": "/rick-and-morty-proyecto/static/css/main.ec5416f5.css.map",
+    "main.e968e042.js.map": "/rick-and-morty-proyecto/static/js/main.e968e042.js.map"
   },
   "entrypoints": [
-    "static/css/main.b6fbb980.css",
-    "static/js/main.16be5026.js"
+    "static/css/main.ec5416f5.css",
+    "static/js/main.e968e042.js"
   ]
 }
