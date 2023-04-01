@@ -1,0 +1,80 @@
+@import '../styles/variables';
+
+.favorites-container{
+    
+    .fav-list-img{
+        padding: 1rem 1rem;
+    }
+    .fav-img{
+        display: flex;
+        border-radius: 1rem;
+        
+    }
+    .fav-title{
+        color: rgb(228, 105, 53);
+    }
+
+    .fav-list{
+        display: inline-flex;
+        border-radius: 1rem;
+        background-color: $background-color-nav;
+        width: 40rem;
+        justify-content: space-around;
+        color: $yellow-font;
+        padding: 1rem 1rem;
+    }
+    
+    h1{
+        color: $white-font;
+    }
+    .goHome-fav{
+        font-family: 'Inter', sans-serif;
+        background: $background-color-buttons;
+        width: 130px;
+        height: 30px;
+        padding: 0 10px;
+        color: $white-font;
+        font-size: 20px;
+        border-radius: 2rem;
+        border: none;
+        box-shadow: 3px 3px 3px 1px rgb(121, 116, 116);  
+    }
+     button{
+        //position: relative;
+        background: $background-favorite-card;
+        box-shadow: 3px 3px 3px 1px rgb(121, 116, 116);  
+        border-radius: .5rem;
+        border: none;
+        color: $white-font;
+        height: 2rem;
+    }
+
+    @media screen and (max-width: 500px){
+        .fav-img{
+            display: inline;
+            width: 180px;
+
+        }
+        .fav-list {
+            display: inline-block;
+            width: 80%;
+        }
+        .fav-list-items{
+            line-height: .8rem;
+        }
+    }
+    @media (min-width: 500px) and (max-width: 850px){
+        .fav-img{
+            display: inline;
+            width: 200px;
+
+        }
+        .fav-list {
+            display: inline-block;
+            width: 80%;
+        }
+        .fav-list-items{
+            line-height: 1.5rem;
+        }
+    }
+}

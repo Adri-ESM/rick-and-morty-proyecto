@@ -1,0 +1,50 @@
+@import '../variables';
+
+.container{
+    
+    background-color: $background-about;
+    //background-image: url('https://img.freepik.com/vector-gratis/fondo-minimalista-dibujado-mano_23-2149001650.jpg?size=626&ext=jpg&ga=GA1.1.1089459513.1678641889&semt=ais');
+    width: 650px;
+    height: 800px;
+    border-radius: 20px;
+    display: inline-block;
+    opacity: 0.9;
+    margin-top: 5rem;
+    line-height: 2rem;
+    padding: 1rem 1rem;
+
+    .container-photo-adri img{
+        border-radius: 50%;
+    }
+    .container-info{
+        background: linear-gradient(#C6FFDD, #FBD786, #f7797d);
+        color: #501d30;
+        padding: 1rem 1rem;
+        border-radius: 20px;
+        margin-top: 2rem;
+    }
+   
+    h1{
+        margin-top: 2rem;
+    }
+
+    h2{
+        font-family: 'Inter', sans-serif;
+        padding: 20px;
+        margin-top: 2rem;
+    }
+
+    .container_p1, .container_p2{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+
+   }
+
+   @media screen and (max-width: 500px){
+        width: auto;
+        height: auto;
+   }
+
+}
